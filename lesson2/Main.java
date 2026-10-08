@@ -1,3 +1,5 @@
+package lesson2;
+
 public class Main {
     static int integerValue;
     static long longerValue;

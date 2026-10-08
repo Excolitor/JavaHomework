@@ -1,3 +1,5 @@
+package lesson2;
+
 public class DataHolder {
     private byte byteValue;
     private short shortValue;
