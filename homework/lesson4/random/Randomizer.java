@@ -5,15 +5,14 @@ public class Randomizer {
     private static final String CAPITALLETTER = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     private static final String LETTER = "abcdefghijklmnopqrstuvwxyz";
 
-    public static int rndAge (int age){
+    public static int rndAge () {
         Random rnd = new Random();
-        int rndAge = rnd.nextInt(1,20);
-        return rndAge;
+        return rnd.nextInt(28) + 1;
     }
 
-    public static String generateLetterCharacter (int length) {
+    public static String generateLetterCharacter () {
         Random rndLength = new Random();
-        int targetLength = rndLength.nextInt(3,5);
+        int targetLength = rndLength.nextInt(3,6);
         Random rndChar = new Random();
         StringBuilder sb = new StringBuilder(targetLength);
         for (int i = 0; i < targetLength; i++) {

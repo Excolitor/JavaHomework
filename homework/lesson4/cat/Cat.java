@@ -1,13 +1,10 @@
 package homework.lesson4.cat;
-
-import homework.lesson4.random.Randomizer;
-
 import java.util.Objects;
 
 public class Cat {
 
     public Cat() {
-
+        this(defName, defAge);
     }
 
     public String getName() {
@@ -39,6 +36,9 @@ public class Cat {
     }
 
     private static final String defName = "Кишка";
+    private static final int defAge = 2;
+    private final int id;
+    private static int counter = 0;
 
     public int getAge() {
         return age;
@@ -51,21 +51,14 @@ public class Cat {
     public Cat (String name, int age) {
         this.name = name;
         this.age = age;
+        this.id = ++counter;
     }
 
-    private static final int defAge = 2;
     private String name;
     private int age;
-    private int id;
 
-//    Randomizer randomizer = new Randomizer();
-
-    public static void main (String[] args) {
-        Cat cat = new Cat();
-        cat.setName(Randomizer.generateCapitalCharacter(1) + Randomizer.generateLetterCharacter(5));
-        cat.setAge(Randomizer.rndAge(5));
-        System.out.println(cat.name);
-        System.out.println(cat.age);
+    public int getId() {
+        return id;
     }
 
 }
