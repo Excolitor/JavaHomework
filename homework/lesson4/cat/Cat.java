@@ -30,8 +30,9 @@ public class Cat {
     @Override
     public String toString() {
         return "Cat{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
+                "Имя кота = '" + name + '\'' +
+                ", возраст = " + age +
+                ", ID = " + id +
                 '}';
     }
 

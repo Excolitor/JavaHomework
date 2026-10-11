@@ -38,6 +38,16 @@ public class Main {
             count++;
         } while (count < 10);
 
+        Cat [] cats = new Cat[5];
+        for (int i = 0; i < cats.length; i++) {
+            Cat catArray = new Cat();
+            catArray.setName(Randomizer.generateCapitalCharacter(1) + Randomizer.generateLetterCharacter());
+            catArray.setAge(Randomizer.rndAge());
+            cats[i] = catArray;
+        }
+        for (Cat cat : cats) {
+            System.out.println(cat);
+        }
     }
 
 
