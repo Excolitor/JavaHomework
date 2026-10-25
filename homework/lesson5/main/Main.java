@@ -1,3 +1,5 @@
+package homework.lesson5.main;
+
 import homework.lesson5.matrix.Matrix;
 public class Main {
     public static void main(String[] args) {
