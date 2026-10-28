@@ -3,7 +3,7 @@ package homework.lesson6;
 public class Main {
     public static void main(String[] args) {
         Animal[] animals = {
-                new Dog("Коты   ]]к", "Двор", "Овчарка"),
+                new Dog("Коты", "Двор", "Овчарка"),
                 new Dog("Мясо", "Дом", "Лабрадор"),
                 new Cat("Рыба", "Дом", true),
                 new Cat("Мыши", "Улица", false),
