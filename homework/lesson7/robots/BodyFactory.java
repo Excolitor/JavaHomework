@@ -9,4 +9,5 @@ class BodyFactoryImpl implements BodyFactory {
     public Robot.Body createBody(BodyType type) {
         return new Robot.Body(type);
     }
+    /////
 }

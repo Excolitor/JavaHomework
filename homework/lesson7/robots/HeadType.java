@@ -13,4 +13,5 @@ public enum HeadType {
     public String getTitle() {
         return title;
     }
+    /////
 }

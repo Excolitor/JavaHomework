@@ -9,4 +9,5 @@ class HeadFactoryImpl implements HeadFactory {
     public Robot.Head createHead(HeadType type) {
         return new Robot.Head(type);
     }
+    /////
 }
